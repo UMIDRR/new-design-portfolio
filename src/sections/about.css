@@ -1,0 +1,117 @@
+.about-section {
+  min-height: 100vh;
+  padding: 100px 8%;
+  background: radial-gradient(circle at top, #0b1437, #050b24);
+  color: #eaeaff;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.about-title span {
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(90deg, #6cf, #8a5cff);
+  margin: 14px auto 0;
+  border-radius: 10px;
+}
+
+/* layout */
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* left card */
+.about-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.about-card h3 {
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+.about-card p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #cdd3ff;
+  margin-bottom: 16px;
+}
+
+/* skills */
+.skills h3 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.skill {
+  margin-bottom: 26px;
+  position: relative;
+}
+
+.skill span {
+  font-size: 14px;
+  color: #dfe3ff;
+}
+
+.percent {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 13px;
+  color: #9aa2ff;
+}
+
+.progress {
+  margin-top: 10px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* colors */
+.frontend {
+  background: linear-gradient(90deg, #00f5ff, #00d4ff);
+}
+
+.backend {
+  background: linear-gradient(90deg, #6a8dff, #8aa4ff);
+}
+
+.uiux {
+  background: linear-gradient(90deg, #8a5cff, #b18cff);
+}
+
+.devops {
+  background: linear-gradient(90deg, #ff2f92, #ff5fc4);
+}
+
+/* responsive */
+@media (max-width: 992px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-title {
+    font-size: 38px;
+  }
+}
